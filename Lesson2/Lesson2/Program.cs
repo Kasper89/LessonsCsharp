@@ -25,6 +25,8 @@ namespace Lesson2
             decimal d = 0.1M;
 
             float f = 0.1F;
+
+            dynamic j = 5;            
         }
     }
 }
