@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{530AD4D8-6B63-4F5A-B043-F8268D42689A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lesso6</RootNamespace>
-    <AssemblyName>Lesso6</AssemblyName>
+    <RootNamespace>Lesson6</RootNamespace>
+    <AssemblyName>Lesson6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
