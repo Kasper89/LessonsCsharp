@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Lesso6
+namespace Lesson6
 {
     class Program
     {
