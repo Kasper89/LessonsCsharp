@@ -43,7 +43,8 @@ namespace Lesson7DZ
             overcooking.product.Add(onion);
             overcooking.product.Add(oil);
             overcooking.СookingDish = "Обжарить лук и морковь на растительном масле.";
-            if(TimeSpan.TryParse("0:15:0", out TimeSpan resultcook))
+            TimeSpan resultcook;
+            if(TimeSpan.TryParse("0:15:0", out resultcook))
             {
                 overcooking.CookingDish_Time = resultcook;
             }
@@ -59,7 +60,8 @@ namespace Lesson7DZ
             sup.product.Add(water);
             sup.Dishes.Add(overcooking);
             sup.СookingDish = "За кипятить воду. Кинуть пережарку и картофель.";
-            if(TimeSpan.TryParse("3:15:0", out TimeSpan result))
+            TimeSpan result;
+            if(TimeSpan.TryParse("3:15:0", out result))
             {
                 sup.CookingDish_Time = result;
             }
