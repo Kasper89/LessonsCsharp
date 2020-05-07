@@ -82,40 +82,41 @@ namespace Lesson7DZ
             }
             foreach(var item in sup.product)
             {
-                string Name;
+                dynamic d = item;
+                string Name = d.Name;
 
-                switch(item.GetType().Name)
-                {
-                    case "Oil":
-                        Oil oil1 = new Oil();
-                        oil1 = (Oil)item;
-                        Name = oil1.Name;
-                        break;
-                    case "potatoes":
-                        potatoes potatoes1 = new potatoes();
-                        potatoes1 = (potatoes)item;
-                        Name = potatoes1.Name;
-                        break;
-                    case "water":
-                        water water1 = new water();
-                        water1 = (water)item;
-                        Name = water1.Name;
-                        break;
-                    case "Carrot":
-                        Carrot carrot1 = new Carrot();
-                        carrot1 = (Carrot)item;
-                        Name = carrot1.Name;
-                        break;
-                    case "onion":
-                        onion onion1 = new onion();
-                        onion1 = (onion)item;
-                        Name = onion1.Name;
-                        break;
-                    default:
-                        Name = "";
-                        break;
+                //switch(item.GetType().Name)
+                //{
+                //    case "Oil":
+                //        Oil oil1 = new Oil();
+                //        oil1 = (Oil)item;
+                //        Name = oil1.Name;
+                //        break;
+                //    case "potatoes":
+                //        potatoes potatoes1 = new potatoes();
+                //        potatoes1 = (potatoes)item;
+                //        Name = potatoes1.Name;
+                //        break;
+                //    case "water":
+                //        water water1 = new water();
+                //        water1 = (water)item;
+                //        Name = water1.Name;
+                //        break;
+                //    case "Carrot":
+                //        Carrot carrot1 = new Carrot();
+                //        carrot1 = (Carrot)item;
+                //        Name = carrot1.Name;
+                //        break;
+                //    case "onion":
+                //        onion onion1 = new onion();
+                //        onion1 = (onion)item;
+                //        Name = onion1.Name;
+                //        break;
+                //    default:
+                //        Name = "";
+                //        break;
 
-                }
+                //}
                 Console.WriteLine(Name+" "+item.QuantityProduct + " "+ item.UnitProduct+" Калорийность продукта: "+item.CalorieTo100()+" ккал");
                 Cal += item.CalorieTo100();
             }
@@ -132,40 +133,41 @@ namespace Lesson7DZ
                 Console.WriteLine("Состав: ");
                 foreach (var itemprod in itemsup.product)
                 {
-                    string Name;
+                    dynamic d = itemprod;
+                    string Name= d.Name;
 
-                    switch (itemprod.GetType().Name)
-                    {
-                        case "Oil":
-                            Oil oil1 = new Oil();
-                            oil1 = (Oil)itemprod;
-                            Name = oil1.Name;
-                            break;
-                        case "potatoes":
-                            potatoes potatoes1 = new potatoes();
-                            potatoes1 = (potatoes)itemprod;
-                            Name = potatoes1.Name;
-                            break;
-                        case "water":
-                            water water1 = new water();
-                            water1 = (water)itemprod;
-                            Name = water1.Name;
-                            break;
-                        case "Carrot":
-                            Carrot carrot1 = new Carrot();
-                            carrot1 = (Carrot)itemprod;
-                            Name = carrot1.Name;
-                            break;
-                        case "onion":
-                            onion onion1 = new onion();
-                            onion1 = (onion)itemprod;
-                            Name = onion1.Name;
-                            break;
-                        default:
-                            Name = "";
-                            break;
+                    //switch (itemprod.GetType().Name)
+                    //{
+                    //    case "Oil":
+                    //        Oil oil1 = new Oil();
+                    //        oil1 = (Oil)itemprod;
+                    //        Name = oil1.Name;
+                    //        break;
+                    //    case "potatoes":
+                    //        potatoes potatoes1 = new potatoes();
+                    //        potatoes1 = (potatoes)itemprod;
+                    //        Name = potatoes1.Name;
+                    //        break;
+                    //    case "water":
+                    //        water water1 = new water();
+                    //        water1 = (water)itemprod;
+                    //        Name = water1.Name;
+                    //        break;
+                    //    case "Carrot":
+                    //        Carrot carrot1 = new Carrot();
+                    //        carrot1 = (Carrot)itemprod;
+                    //        Name = carrot1.Name;
+                    //        break;
+                    //    case "onion":
+                    //        onion onion1 = new onion();
+                    //        onion1 = (onion)itemprod;
+                    //        Name = onion1.Name;
+                    //        break;
+                    //    default:
+                    //        Name = "";
+                    //        break;
 
-                    }
+                    //}
                     Console.WriteLine(Name + " " + itemprod.QuantityProduct + " " + itemprod.UnitProduct + " Калорийность продукта: " + itemprod.CalorieTo100() + " ккал");
                 }
                 Console.WriteLine("Калорийность: "+itemsup.CalorieDish+" ккал");
