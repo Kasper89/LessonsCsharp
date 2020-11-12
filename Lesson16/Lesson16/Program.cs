@@ -92,9 +92,9 @@ namespace Lesson16
 
 
             //var result = SaveFile("text.txt");
-            var result = SaveFileAsync("text.txt");
+            var TaskResult = SaveFileAsync("text.txt");
             var input = Console.ReadLine();
-            Console.WriteLine(result.Result);
+            Console.WriteLine(TaskResult.Result);
 
 
             Console.ReadLine();
